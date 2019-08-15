@@ -1,0 +1,21 @@
+@media(max-width:800px){
+    
+    #menu-lateral a  {
+	 width: 50%
+}
+    
+    #linha {
+	height: auto;
+}
+    #tabela-denuncia td{
+          padding: 0.75rem .1rem
+    }
+    .hide-colunas-denuncia{
+        display: none
+    }
+}
+@media(max-width:576px){
+    .td-opcoes img{
+        padding-bottom: 0.2rem !important
+    }
+}

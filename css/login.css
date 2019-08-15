@@ -1,0 +1,136 @@
+
+@font-face {
+    font-family: proxima-nova-black;
+    src: url("../fonts/proxima-nova-black.otf");
+
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url("../fonts/proxima-nova.otf");
+
+}
+
+
+
+body{
+    font-family: "proxima-nova"
+}
+
+
+#section-login{
+    background-image: url('../img/01.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+background-position: center 27%;
+}
+
+#section-login > div{
+    -webkit-box-shadow: -1px 3px 4px -1px rgba(191,191,191,1);
+-moz-box-shadow: -1px 3px 4px -1px rgba(191,191,191,1);
+box-shadow: -1px 3px 4px -1px rgba(191,191,191,1);
+}
+#section-login{
+    position: relative
+}
+#header-login{
+    
+/*    background:  #d1de38;*/
+    background:  #a1d141;
+    height: 160px
+}
+
+#header-login h2{
+    font-family: "proxima-nova-black";
+/*    color: #707729;*/
+    color:#f8f9fa;
+    letter-spacing: 3px;
+    text-transform: uppercase
+}
+#form-login img{
+   height: 130px 
+}
+
+#form-login {
+	background: #FFF;
+    border: solid #dedede 1px;
+    height: auto
+}
+
+#form-login span, #form-login input{
+/*    border: 1px solid #cacea2;*/
+    border: 1px solid #b9d485;
+    background: #FFF;
+} 
+
+#form-login svg{
+/*    color:#707729;*/
+    color:#82a934;
+}
+
+#form-login p{
+/*    color: #707729;*/
+    color:#6c8835;
+}
+#box-fomulario-login{
+    position: absolute;
+    top:95px;
+}
+
+#form-login input:focus{
+-webkit-box-shadow: 0px 0px 4px 2px rgba(211,230,150,1);
+-moz-box-shadow: 0px 0px 4px 2px rgba(211,230,150,1);
+box-shadow: 0px 0px 4px 2px rgba(211,230,150,1);
+
+}
+
+input::placeholder{
+/*   color: #707729 !important;*/
+   color: #82a934 !important;
+}
+
+#form-login button{
+/*    background: #707729;*/
+    background: #a1d141;
+    color:#FFF;
+      width: 50%;
+}
+
+#form-login a{
+    color:#555a1a;
+    font-weight: 700;
+}
+#form-login button:hover{
+    background: #80a733;
+    transition: all 1s;
+  
+}
+
+#box-info-sistemas{
+    color:#646b1f
+}
+#form-login small{
+      color: indianred;
+}
+
+.error-validacao{
+    
+    display: none;
+    
+}
+
+.error-validacao-small{
+    display: none
+}
+
+#box-loader{
+    z-index: 2; 
+    height: 100vh; 
+    position: absolute; 
+    background-color: #beec59f7; 
+    justify-content: center;
+    align-items: center;
+    color:#3c520df7;
+    display: flex;
+} 

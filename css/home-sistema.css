@@ -1,0 +1,97 @@
+@font-face {
+    font-family: proxima-nova-black;
+    src: url("../fonts/proxima-nova-black.otf");
+
+}
+
+@font-face {
+    font-family: proxima-nova;
+    src: url("../fonts/proxima-nova.otf");
+
+}
+
+img{
+    cursor: pointer;
+}
+
+body{
+
+    overflow: hidden;
+      font-family: "proxima-nova"
+}
+#linha {
+	height: 100vh;
+}
+#nav-home-sistema ul li a{
+
+    font-size: 2rem;
+
+}
+
+#nav-home-sistema  svg{
+  
+    color:#697635;
+}
+
+#nav-home-sistema  img{
+    width: 75%;
+}
+
+#menu-lateral .nav-link.active{
+    background: #e7eaec;
+}
+
+#menu-lateral .nav-link{
+    border-radius: 0;
+}
+
+#menu-lateral a{
+	color: #1a3839
+}
+
+#menu-lateral svg{
+    font-size: 1rem;
+}
+
+
+#tabela-denuncia thead {
+    background: #1a3839;
+    text-transform: uppercase;
+    color: #f8f9fa;
+}
+
+
+
+#tabela-denuncia tbody{
+        color:#495057;
+}
+
+#tabela-denuncia tbody img{
+    width: 35px;
+    padding: 0 0.2rem;
+}
+
+.texto-nowrap{
+     max-width: 190px; /* Tamanho */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap
+}
+
+#tabela-denuncia thead tr:last-child th{
+    padding: 0 !important;
+    background: #FFF !important;
+    border-bottom: 0;
+}
+
+#tabela-denuncia thead tr:last-child th input{
+        padding: 0.4rem;
+    margin: 1% 0;
+    border: solid #cacfd4 1px;
+}
+
+#nav-home-sistema li:last-child{
+    
+    background: #bed465;
+  
+}

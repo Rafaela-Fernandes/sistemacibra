@@ -1,0 +1,37 @@
+@media(max-width: 800px){
+     #form-login {
+        padding: 2rem
+    }
+
+}
+
+
+@media(max-width: 576px) {
+    #form-login {
+        padding: 1.3rem
+    }
+
+    #form-login button {
+        width: 100% !important;
+    }
+
+    #form-login a {
+        text-align: center !important;
+        float: inherit ! important;
+        display: block;
+        margin-top: 5%;
+    }
+
+    #form-login img {
+        height: 100px
+    }
+
+    #header-login h2 {
+        font-size: 1.5rem;
+    }
+    
+    #box-info-sistemas p{
+        font-size: 14px
+    }
+}
+

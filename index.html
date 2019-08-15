@@ -1,0 +1,186 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link type="text/css" href="css/fontawesome.css" rel="stylesheet">
+
+    <link type="text/css" href="css/login.css" rel="stylesheet">
+    <link type="text/css" href="css/mobile.css" rel="stylesheet">
+    <link type="text/css" href="css/gif.css" rel="stylesheet">
+
+
+    <title>Cibra-Admin</title>
+
+</head>
+
+<body style="">
+
+<div class="container-fluid" id="box-loader">
+   <div>
+      <div id="floatingCirclesG">
+	<div class="f_circleG" id="frotateG_01"></div>
+	<div class="f_circleG" id="frotateG_02"></div>
+	<div class="f_circleG" id="frotateG_03"></div>
+	<div class="f_circleG" id="frotateG_04"></div>
+	<div class="f_circleG" id="frotateG_05"></div>
+	<div class="f_circleG" id="frotateG_06"></div>
+	<div class="f_circleG" id="frotateG_07"></div>
+	<div class="f_circleG" id="frotateG_08"></div>
+  </div>
+       <h5 class="text-center">Carregando sistema</h5>
+   </div>
+</div>
+
+     </div>
+
+    <section class="container-fluid" id="section-login">
+      
+        <div class="row">
+            <div class="col-12" id="header-login">
+                <h2 class="text-center mt-4">Seja Bem vindo !</h2>
+            </div>
+
+        </div>
+
+        <div class="row d-flex justify-content-center">
+
+            <div class="col-lg-5 col-md-8 col-sm-12 " id="box-fomulario-login">
+                <form action="" method="post" class="px-lg-5 pt-3 pb-5" id="form-login">
+                    <div class="d-flex justify-content-center">
+                        <img src="img/logo-cibra.jpg" alt="" height="" width="">
+                    </div>
+                    <p class="text-center mb-4">Sistema de controle aos dados do usuário</p>
+
+                    <div class="alert alert-danger alert-dismissible fade show error-validacao" role="alert">
+                        <strong>Atenção</strong> Usuário ou senha inválida
+                        
+                    </div>
+
+                    <div id="box-01">
+                       <small class="error-validacao-small">Este campo é obrigatorio</small>
+                        <div class="input-group flex-nowrap mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-user"></i></span>
+                            </div>
+                            <input name="nome" type="text" class="form-control" placeholder="Usuario" aria-label="usuario" aria-describedby="addon-wrapping">
+
+                        </div>
+                    </div>
+
+
+                    <div id="box-02">
+                         <small class="error-validacao-small">Este campo é obrigatorio</small>
+                        <div class="input-group flex-nowrap mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                            </div>
+                            <input name="senha" type="password" class="form-control" placeholder="Senha" aria-label="Senha" aria-describedby="addon-wrapping">
+
+                        </div>
+                    </div>
+
+                    <div class="mt-4">
+                        <button class="btn" id="btn-enviar">Entrar</button>
+                        <a href="#" class="float-right">Esqueci a senha</a>
+                    </div>
+                   
+                    
+                </form>
+               
+                    <div class="mt-4 text-center" id="box-info-sistemas">
+
+                    <p class="m-0">Sistema Versão 1.00 - Contruido pela Stefanini</p>
+                    <p class="m-0">Suporte: (71) 3340-2526 / 3635-5889</p>
+
+                </div>
+                
+            </div>
+        </div>
+
+    </section>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/fontawesome.js"></script>
+
+    <script>
+        //  só para teste, validação deve ser no back.
+        $("document").ready(function() {
+             $("#box-loader").hide();
+            var senha = 1234;
+            var usuario = "rafaela";
+            $("#btn-enviar").click(function(e){
+                e.preventDefault();
+
+                 if($("#form-login input")[0].value == usuario && $("#form-login input")[1].value == senha){
+                           $("#form-login .alert").addClass("error-validacao");
+                         
+                       
+                            $("#box-loader").show("fade", function(){
+
+                               setTimeout(function() {  
+                                   $("#box-loader").hide();
+                                   	
+                                  
+                                   $("#form-login input").val("");
+                                   
+                                    window.location.assign("file:///C:/Users/rsfernandes/Desktop/Cibra-admin/home-sistema.html");
+                                }, 2000)
+                            });
+                         
+                          //$('button').blur()
+       
+                    
+                        
+                     }else if($("#form-login input")[0].value == "" || $("#form-login input")[1].value == "" ){
+                         console.log("campos vazios");
+                        campoVazio();
+                 }else if($("#form-login input")[0].value != usuario || $("#form-login input")[1].value != senha){
+                      
+                      $("#form-login .alert").removeClass("error-validacao");
+                      campoVazio();
+                 }
+            });
+           
+          
+            function campoVazio(){
+                $("#form-login input").each(function(index, elemente) {
+                   
+                  
+                  if (elemente.value == "") {
+                    var parente = $(this).parent().parent();
+                     idElemento = parente.attr("id");
+                     
+                      $("#" + idElemento + " > small").removeClass("error-validacao-small");
+                   
+                    //console.log("campo vazio " + idElemento);
+                }else{
+                     
+                        var parenteV = $(this).parent().parent();
+                     idElementoV = parenteV.attr("id");
+                  
+                     $("#" +idElementoV + " > small").addClass("error-validacao-small");
+                    
+                     //console.log($("#" +idElementoV + " > small"));
+                  }  
+                    
+                    
+              })
+      
+            }
+            
+          
+        })
+    </script>
+
+</body>
+
+</html>
