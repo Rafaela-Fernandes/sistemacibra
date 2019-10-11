@@ -55,7 +55,7 @@ body{
 
 
 #tabela-denuncia thead {
-    background: #1a3839;
+    background: #6c757d;
     text-transform: uppercase;
     color: #f8f9fa;
 }
@@ -81,7 +81,7 @@ body{
 #tabela-denuncia thead tr:last-child th{
     padding: 0 !important;
     background: #FFF !important;
-    border-bottom: 0;
+    border: 0
 }
 
 #tabela-denuncia thead tr:last-child th input{
@@ -94,4 +94,36 @@ body{
     
     background: #bed465;
   
+}
+
+#modal-excluir .modal-body{
+    padding: 1rem 1rem 0;
+}
+
+#modal-excluir .modal-body p{
+    color: #6c757d
+}
+.btn-modal{
+   
+    color: #FFF;
+    
+    background: #f97070
+}
+
+.btn-modal:hover{
+    background:#c73d3d;
+    transition: all 1s;
+    color: #FFF !important;
+}
+#modal-excluir .modal-footer {
+    border: 0 !important;
+    padding: 0 1rem 1rem !important;
+}
+
+
+#modal-excluir .modal-header, #modal-info .modal-header{
+    background: #dee2e6ab;
+}
+#modal-excluir .modal-title,  #modal-info .modal-header{
+    color: #495057;
 }

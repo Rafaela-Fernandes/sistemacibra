@@ -23,21 +23,20 @@
 
 <div class="container-fluid" id="box-loader">
    <div>
-      <div id="floatingCirclesG">
-	<div class="f_circleG" id="frotateG_01"></div>
-	<div class="f_circleG" id="frotateG_02"></div>
-	<div class="f_circleG" id="frotateG_03"></div>
-	<div class="f_circleG" id="frotateG_04"></div>
-	<div class="f_circleG" id="frotateG_05"></div>
-	<div class="f_circleG" id="frotateG_06"></div>
-	<div class="f_circleG" id="frotateG_07"></div>
-	<div class="f_circleG" id="frotateG_08"></div>
+        <div id="floatingCirclesG">
+        <div class="f_circleG" id="frotateG_01"></div>
+        <div class="f_circleG" id="frotateG_02"></div>
+        <div class="f_circleG" id="frotateG_03"></div>
+        <div class="f_circleG" id="frotateG_04"></div>
+        <div class="f_circleG" id="frotateG_05"></div>
+        <div class="f_circleG" id="frotateG_06"></div>
+        <div class="f_circleG" id="frotateG_07"></div>
+        <div class="f_circleG" id="frotateG_08"></div>
+        </div>
+        <h5 class="text-center">Carregando sistema</h5>
+        </div>
   </div>
-       <h5 class="text-center">Carregando sistema</h5>
-   </div>
 </div>
-
-     </div>
 
     <section class="container-fluid" id="section-login">
       
@@ -51,7 +50,7 @@
         <div class="row d-flex justify-content-center">
 
             <div class="col-lg-5 col-md-8 col-sm-12 " id="box-fomulario-login">
-                <form action="home-sistema.html" method="post" class="px-lg-5 pt-3 pb-5" id="form-login">
+                <form action="" method="post" class="px-lg-5 pt-3 pb-5" id="form-login">
                     <div class="d-flex justify-content-center">
                         <img src="img/logo-cibra.jpg" alt="" height="" width="">
                     </div>
@@ -85,10 +84,10 @@
                         </div>
                     </div>
 
-                    <dgit iv class="mt-4">
+                    <div class="mt-4">
                         <button class="btn" id="btn-enviar">Entrar</button>
                         <a href="#" class="float-right">Esqueci a senha</a>
-                    </dgit>
+                    </div>
                    
                     
                 </form>
@@ -111,6 +110,25 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/fontawesome.js"></script>
 
+    <script>
+      
+        $("document").ready(function() {
+          
+            $("#box-loader").hide();
+            $("#btn-enviar").click(function(e){
+                e.preventDefault();
+                $("#box-loader").show();
+                  setTimeout(function(){
+                    $("#box-loader").hide();
+                    window.location.href = "../Cibra-admin/home-sistema.html"
+                  },3000)
+            });
+           
+        
+            
+          
+        })
+    </script>
 
 </body>
 
