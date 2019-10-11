@@ -19,7 +19,7 @@
 
 </head>
 
-<body style="">
+<body>
 
 <div class="container-fluid" id="box-loader">
    <div>
@@ -51,7 +51,7 @@
         <div class="row d-flex justify-content-center">
 
             <div class="col-lg-5 col-md-8 col-sm-12 " id="box-fomulario-login">
-                <form action="" method="post" class="px-lg-5 pt-3 pb-5" id="form-login">
+                <form action="home-sistema.html" method="post" class="px-lg-5 pt-3 pb-5" id="form-login">
                     <div class="d-flex justify-content-center">
                         <img src="img/logo-cibra.jpg" alt="" height="" width="">
                     </div>
@@ -85,10 +85,10 @@
                         </div>
                     </div>
 
-                    <div class="mt-4">
+                    <dgit iv class="mt-4">
                         <button class="btn" id="btn-enviar">Entrar</button>
                         <a href="#" class="float-right">Esqueci a senha</a>
-                    </div>
+                    </dgit>
                    
                     
                 </form>
@@ -111,75 +111,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
     <script type="text/javascript" src="js/fontawesome.js"></script>
 
-    <script>
-        //  só para teste, validação deve ser no back.
-        $("document").ready(function() {
-             $("#box-loader").hide();
-            var senha = 1234;
-            var usuario = "rafaela";
-            $("#btn-enviar").click(function(e){
-                e.preventDefault();
-
-                 if($("#form-login input")[0].value == usuario && $("#form-login input")[1].value == senha){
-                           $("#form-login .alert").addClass("error-validacao");
-                         
-                       
-                            $("#box-loader").show("fade", function(){
-
-                               setTimeout(function() {  
-                                   $("#box-loader").hide();
-                                   	
-                                  
-                                   $("#form-login input").val("");
-                                   
-                                    window.location.assign("file:///C:/Users/rsfernandes/Desktop/Cibra-admin/home-sistema.html");
-                                }, 2000)
-                            });
-                         
-                          //$('button').blur()
-       
-                    
-                        
-                     }else if($("#form-login input")[0].value == "" || $("#form-login input")[1].value == "" ){
-                         console.log("campos vazios");
-                        campoVazio();
-                 }else if($("#form-login input")[0].value != usuario || $("#form-login input")[1].value != senha){
-                      
-                      $("#form-login .alert").removeClass("error-validacao");
-                      campoVazio();
-                 }
-            });
-           
-          
-            function campoVazio(){
-                $("#form-login input").each(function(index, elemente) {
-                   
-                  
-                  if (elemente.value == "") {
-                    var parente = $(this).parent().parent();
-                     idElemento = parente.attr("id");
-                     
-                      $("#" + idElemento + " > small").removeClass("error-validacao-small");
-                   
-                    //console.log("campo vazio " + idElemento);
-                }else{
-                     
-                        var parenteV = $(this).parent().parent();
-                     idElementoV = parenteV.attr("id");
-                  
-                     $("#" +idElementoV + " > small").addClass("error-validacao-small");
-                    
-                     //console.log($("#" +idElementoV + " > small"));
-                  }  
-                    
-                    
-              })
-      
-            }
-            
-          
-        })
-    </script>
 
 </body>
 
